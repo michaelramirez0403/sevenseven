@@ -91,7 +91,7 @@ class LoginView: BaseViewController {
         forgotButton.snp.makeConstraints { make in
             make.top.equalTo(signUpButton.snp.bottom).offset(8)
             make.trailing.equalTo(signUpButton.snp.trailing)
-            make.width.equalTo(150)
+            make.width.equalTo(250)
             make.height.equalTo(35)
         }
         fancyIconView.snp.makeConstraints { make in
