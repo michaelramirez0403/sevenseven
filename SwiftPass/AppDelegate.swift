@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  SwiftPass
 //
-//  Created by Macky Ramirez on 11/5/24.
+//  Created by Michael Ramirez on 11/5/24.
 //
 
 import UIKit

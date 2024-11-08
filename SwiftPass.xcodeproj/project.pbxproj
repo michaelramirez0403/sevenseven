@@ -3,36 +3,99 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 70;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		740345D52CDA1EDB0067A4B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740345D42CDA1EDB0067A4B7 /* AppDelegate.swift */; };
+		740345E72CDA1EEA0067A4B7 /* SwiftPass.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 740345E52CDA1EEA0067A4B7 /* SwiftPass.xcdatamodeld */; };
+		740345E82CDA1EEA0067A4B7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740345E02CDA1EEA0067A4B7 /* LoginView.swift */; };
+		740345E92CDA1EEA0067A4B7 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740345DC2CDA1EEA0067A4B7 /* BaseViewController.swift */; };
+		740345EA2CDA1EEA0067A4B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740345E42CDA1EEA0067A4B7 /* SceneDelegate.swift */; };
+		740345EB2CDA1EEA0067A4B7 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740345DD2CDA1EEA0067A4B7 /* Constant.swift */; };
+		740345EC2CDA1EEA0067A4B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 740345D62CDA1EEA0067A4B7 /* Assets.xcassets */; };
+		740345ED2CDA1EEA0067A4B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 740345D82CDA1EEA0067A4B7 /* LaunchScreen.storyboard */; };
+		741AFD4D2CDB112900D7C0D1 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741AFD4C2CDB112900D7C0D1 /* LoginViewModel.swift */; };
+		741AFD4F2CDB154000D7C0D1 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741AFD4E2CDB154000D7C0D1 /* CoreDataManager.swift */; };
+		741AFD5B2CDB210700D7C0D1 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741AFD5A2CDB210700D7C0D1 /* LandingView.swift */; };
+		741AFD622CDB216400D7C0D1 /* PPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741AFD5F2CDB216400D7C0D1 /* PPTextField.swift */; };
+		741AFD632CDB216400D7C0D1 /* PPAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741AFD5D2CDB216400D7C0D1 /* PPAvatarImageView.swift */; };
+		741AFD642CDB216400D7C0D1 /* PPTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741AFD602CDB216400D7C0D1 /* PPTitleLabel.swift */; };
+		741AFD652CDB216400D7C0D1 /* PPButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741AFD5E2CDB216400D7C0D1 /* PPButton.swift */; };
+		741AFD6F2CDB228600D7C0D1 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741AFD672CDB228500D7C0D1 /* String+Ext.swift */; };
+		741AFD722CDB228600D7C0D1 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741AFD682CDB228500D7C0D1 /* UIView+Ext.swift */; };
+		741AFD732CDB228600D7C0D1 /* PHLivePhoto+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741AFD662CDB228500D7C0D1 /* PHLivePhoto+Ext.swift */; };
+		741AFD742CDB228600D7C0D1 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741AFD692CDB228500D7C0D1 /* UIViewController+Ext.swift */; };
+		744087492CDB2ABD0037BFAA /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744087482CDB2ABD0037BFAA /* RegisterView.swift */; };
+		7440874B2CDB49BD0037BFAA /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7440874A2CDB49BD0037BFAA /* RegisterViewModel.swift */; };
+		7470BE772CDB68A60008B28A /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7470BE762CDB68A60008B28A /* Users.swift */; };
+		7470BE792CDB69FF0008B28A /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7470BE782CDB69FF0008B28A /* BaseViewModel.swift */; };
+		74B1C4952CDDA7C600FA4126 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B1C4942CDDA7C600FA4126 /* HomeView.swift */; };
+		74B1C4992CDDB84200FA4126 /* PPSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B1C4982CDDB84200FA4126 /* PPSecondaryTitleLabel.swift */; };
+		74B1C49B2CDDBF6700FA4126 /* UIDevice+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B1C49A2CDDBF6700FA4126 /* UIDevice+Ext.swift */; };
+		AF2C729156FC5C1E5311F2C4 /* Pods_SwiftPass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A72EAADF174DE6B6D39F776 /* Pods_SwiftPass.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		74B1C4E72CDDD5DE00FA4126 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 740345822CDA19A70067A4B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 740345892CDA19A70067A4B7;
+			remoteInfo = SwiftPass;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		0E42CD4873B897B36F34B250 /* Pods-SwiftPass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftPass.debug.xcconfig"; path = "Target Support Files/Pods-SwiftPass/Pods-SwiftPass.debug.xcconfig"; sourceTree = "<group>"; };
+		3A72EAADF174DE6B6D39F776 /* Pods_SwiftPass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftPass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		734C89F38F13195C8E3C7D71 /* Pods-SwiftPass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftPass.release.xcconfig"; path = "Target Support Files/Pods-SwiftPass/Pods-SwiftPass.release.xcconfig"; sourceTree = "<group>"; };
 		7403458A2CDA19A70067A4B7 /* SwiftPass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPass.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		740345D42CDA1EDB0067A4B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		740345D62CDA1EEA0067A4B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		740345D72CDA1EEA0067A4B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		740345D92CDA1EEA0067A4B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		740345DC2CDA1EEA0067A4B7 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		740345DD2CDA1EEA0067A4B7 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		740345DF2CDA1EEA0067A4B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		740345E02CDA1EEA0067A4B7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		740345E42CDA1EEA0067A4B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		740345E62CDA1EEA0067A4B7 /* SwiftPass.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftPass.xcdatamodel; sourceTree = "<group>"; };
+		741AFD4C2CDB112900D7C0D1 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		741AFD4E2CDB154000D7C0D1 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		741AFD5A2CDB210700D7C0D1 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		741AFD5D2CDB216400D7C0D1 /* PPAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPAvatarImageView.swift; sourceTree = "<group>"; };
+		741AFD5E2CDB216400D7C0D1 /* PPButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPButton.swift; sourceTree = "<group>"; };
+		741AFD5F2CDB216400D7C0D1 /* PPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPTextField.swift; sourceTree = "<group>"; };
+		741AFD602CDB216400D7C0D1 /* PPTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPTitleLabel.swift; sourceTree = "<group>"; };
+		741AFD662CDB228500D7C0D1 /* PHLivePhoto+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PHLivePhoto+Ext.swift"; sourceTree = "<group>"; };
+		741AFD672CDB228500D7C0D1 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		741AFD682CDB228500D7C0D1 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		741AFD692CDB228500D7C0D1 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		744087482CDB2ABD0037BFAA /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		7440874A2CDB49BD0037BFAA /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		7470BE762CDB68A60008B28A /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		7470BE782CDB69FF0008B28A /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		74B1C4942CDDA7C600FA4126 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		74B1C4982CDDB84200FA4126 /* PPSecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPSecondaryTitleLabel.swift; sourceTree = "<group>"; };
+		74B1C49A2CDDBF6700FA4126 /* UIDevice+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Ext.swift"; sourceTree = "<group>"; };
+		74B1C4E32CDDD5DE00FA4126 /* SwiftPassTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftPassTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		7403459F2CDA19A80067A4B7 /* Exceptions for "SwiftPass" folder in "SwiftPass" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 740345892CDA19A70067A4B7 /* SwiftPass */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		7403458C2CDA19A70067A4B7 /* SwiftPass */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				7403459F2CDA19A80067A4B7 /* Exceptions for "SwiftPass" folder in "SwiftPass" target */,
-			);
-			path = SwiftPass;
-			sourceTree = "<group>";
-		};
+		74B1C4E42CDDD5DE00FA4126 /* SwiftPassTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = SwiftPassTests; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		740345872CDA19A70067A4B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF2C729156FC5C1E5311F2C4 /* Pods_SwiftPass.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74B1C4E02CDDD5DE00FA4126 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,11 +105,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FE7E122BE4D7C4D7B725429 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A72EAADF174DE6B6D39F776 /* Pods_SwiftPass.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		590FC313B7C92346FFC4EFB8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E42CD4873B897B36F34B250 /* Pods-SwiftPass.debug.xcconfig */,
+				734C89F38F13195C8E3C7D71 /* Pods-SwiftPass.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		740345812CDA19A70067A4B7 = {
 			isa = PBXGroup;
 			children = (
 				7403458C2CDA19A70067A4B7 /* SwiftPass */,
+				74B1C4E42CDDD5DE00FA4126 /* SwiftPassTests */,
 				7403458B2CDA19A70067A4B7 /* Products */,
+				590FC313B7C92346FFC4EFB8 /* Pods */,
+				1FE7E122BE4D7C4D7B725429 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,8 +137,164 @@
 			isa = PBXGroup;
 			children = (
 				7403458A2CDA19A70067A4B7 /* SwiftPass.app */,
+				74B1C4E32CDDD5DE00FA4126 /* SwiftPassTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		7403458C2CDA19A70067A4B7 /* SwiftPass */ = {
+			isa = PBXGroup;
+			children = (
+				740345D42CDA1EDB0067A4B7 /* AppDelegate.swift */,
+				740345E42CDA1EEA0067A4B7 /* SceneDelegate.swift */,
+				740345DE2CDA1EEA0067A4B7 /* BaseClass */,
+				741AFD6A2CDB228500D7C0D1 /* Extensions */,
+				741AFD612CDB216400D7C0D1 /* CustomViews */,
+				7424D7DD2CDB5BDC00E6017F /* Model */,
+				741AFD582CDB20DF00D7C0D1 /* LandingView */,
+				740345F52CDA2C620067A4B7 /* RegisterView */,
+				740345E32CDA1EEA0067A4B7 /* LoginView */,
+				74B1C4932CDDA7AC00FA4126 /* HomeView */,
+				740345F02CDA2C0E0067A4B7 /* CoreDataManager */,
+				740345D62CDA1EEA0067A4B7 /* Assets.xcassets */,
+				740345DB2CDA1EEA0067A4B7 /* Base.lproj */,
+				740345DF2CDA1EEA0067A4B7 /* Info.plist */,
+				740345E52CDA1EEA0067A4B7 /* SwiftPass.xcdatamodeld */,
+			);
+			path = SwiftPass;
+			sourceTree = "<group>";
+		};
+		740345DB2CDA1EEA0067A4B7 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				740345D82CDA1EEA0067A4B7 /* LaunchScreen.storyboard */,
+				740345DA2CDA1EEA0067A4B7 /* Main.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		740345DE2CDA1EEA0067A4B7 /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				740345DC2CDA1EEA0067A4B7 /* BaseViewController.swift */,
+				7470BE782CDB69FF0008B28A /* BaseViewModel.swift */,
+				740345DD2CDA1EEA0067A4B7 /* Constant.swift */,
+			);
+			path = BaseClass;
+			sourceTree = "<group>";
+		};
+		740345E12CDA1EEA0067A4B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				740345E02CDA1EEA0067A4B7 /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		740345E22CDA1EEA0067A4B7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				741AFD4C2CDB112900D7C0D1 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		740345E32CDA1EEA0067A4B7 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				740345E12CDA1EEA0067A4B7 /* View */,
+				740345E22CDA1EEA0067A4B7 /* ViewModel */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		740345F02CDA2C0E0067A4B7 /* CoreDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				741AFD4E2CDB154000D7C0D1 /* CoreDataManager.swift */,
+			);
+			path = CoreDataManager;
+			sourceTree = "<group>";
+		};
+		740345F52CDA2C620067A4B7 /* RegisterView */ = {
+			isa = PBXGroup;
+			children = (
+				740345F72CDA2CA00067A4B7 /* ViewModel */,
+				740345F62CDA2C8D0067A4B7 /* View */,
+			);
+			path = RegisterView;
+			sourceTree = "<group>";
+		};
+		740345F62CDA2C8D0067A4B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				744087482CDB2ABD0037BFAA /* RegisterView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		740345F72CDA2CA00067A4B7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7440874A2CDB49BD0037BFAA /* RegisterViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		741AFD582CDB20DF00D7C0D1 /* LandingView */ = {
+			isa = PBXGroup;
+			children = (
+				741AFD592CDB20EE00D7C0D1 /* View */,
+			);
+			path = LandingView;
+			sourceTree = "<group>";
+		};
+		741AFD592CDB20EE00D7C0D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				741AFD5A2CDB210700D7C0D1 /* LandingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		741AFD612CDB216400D7C0D1 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				74B1C4982CDDB84200FA4126 /* PPSecondaryTitleLabel.swift */,
+				741AFD5D2CDB216400D7C0D1 /* PPAvatarImageView.swift */,
+				741AFD5E2CDB216400D7C0D1 /* PPButton.swift */,
+				741AFD5F2CDB216400D7C0D1 /* PPTextField.swift */,
+				741AFD602CDB216400D7C0D1 /* PPTitleLabel.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		741AFD6A2CDB228500D7C0D1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				74B1C49A2CDDBF6700FA4126 /* UIDevice+Ext.swift */,
+				741AFD662CDB228500D7C0D1 /* PHLivePhoto+Ext.swift */,
+				741AFD672CDB228500D7C0D1 /* String+Ext.swift */,
+				741AFD682CDB228500D7C0D1 /* UIView+Ext.swift */,
+				741AFD692CDB228500D7C0D1 /* UIViewController+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7424D7DD2CDB5BDC00E6017F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7470BE762CDB68A60008B28A /* Users.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		74B1C4932CDDA7AC00FA4126 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				74B1C4942CDDA7C600FA4126 /* HomeView.swift */,
+			);
+			path = HomeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,23 +304,43 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 740345A02CDA19A80067A4B7 /* Build configuration list for PBXNativeTarget "SwiftPass" */;
 			buildPhases = (
+				866AFFB9F9405BD188F0EAB7 /* [CP] Check Pods Manifest.lock */,
 				740345862CDA19A70067A4B7 /* Sources */,
 				740345872CDA19A70067A4B7 /* Frameworks */,
 				740345882CDA19A70067A4B7 /* Resources */,
+				20146198B40CE9AD72CAA45B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				7403458C2CDA19A70067A4B7 /* SwiftPass */,
-			);
 			name = SwiftPass;
-			packageProductDependencies = (
-			);
 			productName = SwiftPass;
 			productReference = 7403458A2CDA19A70067A4B7 /* SwiftPass.app */;
 			productType = "com.apple.product-type.application";
+		};
+		74B1C4E22CDDD5DE00FA4126 /* SwiftPassTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74B1C4E92CDDD5DE00FA4126 /* Build configuration list for PBXNativeTarget "SwiftPassTests" */;
+			buildPhases = (
+				74B1C4DF2CDDD5DE00FA4126 /* Sources */,
+				74B1C4E02CDDD5DE00FA4126 /* Frameworks */,
+				74B1C4E12CDDD5DE00FA4126 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74B1C4E82CDDD5DE00FA4126 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				74B1C4E42CDDD5DE00FA4126 /* SwiftPassTests */,
+			);
+			name = SwiftPassTests;
+			packageProductDependencies = (
+			);
+			productName = SwiftPassTests;
+			productReference = 74B1C4E32CDDD5DE00FA4126 /* SwiftPassTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -96,23 +355,29 @@
 					740345892CDA19A70067A4B7 = {
 						CreatedOnToolsVersion = 16.0;
 					};
+					74B1C4E22CDDD5DE00FA4126 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 740345892CDA19A70067A4B7;
+					};
 				};
 			};
 			buildConfigurationList = 740345852CDA19A70067A4B7 /* Build configuration list for PBXProject "SwiftPass" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				"Base 2",
+				"base 2",
 			);
 			mainGroup = 740345812CDA19A70067A4B7;
-			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 7403458B2CDA19A70067A4B7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				740345892CDA19A70067A4B7 /* SwiftPass */,
+				74B1C4E22CDDD5DE00FA4126 /* SwiftPassTests */,
 			);
 		};
 /* End PBXProject section */
@@ -122,13 +387,95 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				740345EC2CDA1EEA0067A4B7 /* Assets.xcassets in Resources */,
+				740345ED2CDA1EEA0067A4B7 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74B1C4E12CDDD5DE00FA4126 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		20146198B40CE9AD72CAA45B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftPass/Pods-SwiftPass-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftPass/Pods-SwiftPass-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftPass/Pods-SwiftPass-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		866AFFB9F9405BD188F0EAB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftPass-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		740345862CDA19A70067A4B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				740345D52CDA1EDB0067A4B7 /* AppDelegate.swift in Sources */,
+				741AFD6F2CDB228600D7C0D1 /* String+Ext.swift in Sources */,
+				74B1C4952CDDA7C600FA4126 /* HomeView.swift in Sources */,
+				741AFD722CDB228600D7C0D1 /* UIView+Ext.swift in Sources */,
+				7470BE792CDB69FF0008B28A /* BaseViewModel.swift in Sources */,
+				741AFD732CDB228600D7C0D1 /* PHLivePhoto+Ext.swift in Sources */,
+				741AFD742CDB228600D7C0D1 /* UIViewController+Ext.swift in Sources */,
+				740345E72CDA1EEA0067A4B7 /* SwiftPass.xcdatamodeld in Sources */,
+				744087492CDB2ABD0037BFAA /* RegisterView.swift in Sources */,
+				740345E82CDA1EEA0067A4B7 /* LoginView.swift in Sources */,
+				740345E92CDA1EEA0067A4B7 /* BaseViewController.swift in Sources */,
+				740345EA2CDA1EEA0067A4B7 /* SceneDelegate.swift in Sources */,
+				740345EB2CDA1EEA0067A4B7 /* Constant.swift in Sources */,
+				74B1C4992CDDB84200FA4126 /* PPSecondaryTitleLabel.swift in Sources */,
+				741AFD4F2CDB154000D7C0D1 /* CoreDataManager.swift in Sources */,
+				741AFD4D2CDB112900D7C0D1 /* LoginViewModel.swift in Sources */,
+				741AFD622CDB216400D7C0D1 /* PPTextField.swift in Sources */,
+				741AFD632CDB216400D7C0D1 /* PPAvatarImageView.swift in Sources */,
+				741AFD642CDB216400D7C0D1 /* PPTitleLabel.swift in Sources */,
+				7440874B2CDB49BD0037BFAA /* RegisterViewModel.swift in Sources */,
+				741AFD652CDB216400D7C0D1 /* PPButton.swift in Sources */,
+				741AFD5B2CDB210700D7C0D1 /* LandingView.swift in Sources */,
+				7470BE772CDB68A60008B28A /* Users.swift in Sources */,
+				74B1C49B2CDDBF6700FA4126 /* UIDevice+Ext.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74B1C4DF2CDDD5DE00FA4126 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -137,22 +484,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		74B1C4E82CDDD5DE00FA4126 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 740345892CDA19A70067A4B7 /* SwiftPass */;
+			targetProxy = 74B1C4E72CDDD5DE00FA4126 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		740345D82CDA1EEA0067A4B7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				740345D72CDA1EEA0067A4B7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		740345DA2CDA1EEA0067A4B7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				740345D92CDA1EEA0067A4B7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		740345A12CDA19A80067A4B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E42CD4873B897B36F34B250 /* Pods-SwiftPass.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 29GTH7D4NQ;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftPass/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -160,27 +536,33 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Michael.SwiftPass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		740345A22CDA19A80067A4B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 734C89F38F13195C8E3C7D71 /* Pods-SwiftPass.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 29GTH7D4NQ;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftPass/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -188,9 +570,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Michael.SwiftPass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -313,6 +699,50 @@
 			};
 			name = Release;
 		};
+		74B1C4EA2CDDD5DE00FA4126 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 29GTH7D4NQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Michael.SwiftPassTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftPass.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftPass";
+			};
+			name = Debug;
+		};
+		74B1C4EB2CDDD5DE00FA4126 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 29GTH7D4NQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Michael.SwiftPassTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftPass.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftPass";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -334,7 +764,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		74B1C4E92CDDD5DE00FA4126 /* Build configuration list for PBXNativeTarget "SwiftPassTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74B1C4EA2CDDD5DE00FA4126 /* Debug */,
+				74B1C4EB2CDDD5DE00FA4126 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		740345E52CDA1EEA0067A4B7 /* SwiftPass.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				740345E62CDA1EEA0067A4B7 /* SwiftPass.xcdatamodel */,
+			);
+			currentVersion = 740345E62CDA1EEA0067A4B7 /* SwiftPass.xcdatamodel */;
+			path = SwiftPass.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 740345822CDA19A70067A4B7 /* Project object */;
 }
