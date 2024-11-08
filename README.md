@@ -46,9 +46,9 @@ Requirements to acheived:
 • Dark mode feature is added.<br />
 
 Screens for UI Design<br />
-![Simulator Screenshot - iPhone 16 Pro - 2024-11-08 at 14 42 00](https://github.com/user-attachments/assets/a0df005d-441d-47e5-907b-9e09599546d7)<br />
+![Simulator Screenshot - iPhone 16 Pro - 2024-11-08 at 14 42 00](https://github.com/user-attachments/assets/a0df005d-441d-47e5-907b-9e09599546d7)
 ![Simulator Screenshot - iPhone 16 Pro - 2024-11-08 at 14 08 45](https://github.com/user-attachments/assets/ce6ff604-834c-4198-900b-a0298df8185d)
-![Simulator Screenshot - iPhone 16 Pro - 2024-11-08 at 14 08 40](https://github.com/user-attachments/assets/74461aec-8f53-4c0e-8577-df7f324d2e8b)<br />
+![Simulator Screenshot - iPhone 16 Pro - 2024-11-08 at 14 08 40](https://github.com/user-attachments/assets/74461aec-8f53-4c0e-8577-df7f324d2e8b)
 ![Simulator Screenshot - iPhone 16 Pro - 2024-11-08 at 14 09 59](https://github.com/user-attachments/assets/eeadb8c0-b07b-4798-8a9b-b47b60f36f50)
 
 
