@@ -91,7 +91,7 @@ class LoginView: BaseViewController {
         forgotButton.snp.makeConstraints { make in
             make.top.equalTo(signUpButton.snp.bottom).offset(8)
             make.trailing.equalTo(signUpButton.snp.trailing)
-            make.width.equalTo(250)
+            make.width.equalTo(180)
             make.height.equalTo(35)
         }
         fancyIconView.snp.makeConstraints { make in
@@ -145,6 +145,7 @@ class LoginView: BaseViewController {
         forgotButton.addTarget(self,
                                action: #selector(notAvailableButtonTapped),
                                for: .touchUpInside)
+        forgotButton.setTitleColor(.systemGray, for: .normal)
         emailTextField.delegate = self
         passwordTextField.delegate = self
     }
