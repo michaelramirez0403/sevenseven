@@ -44,3 +44,14 @@ Requirements to acheived:
 • Pure programmatically, no Storyboard. <br />
 • Applied proper threading.<br />
 • Dark mode feature is added.<br />
+
+Screens for UI Design<br />
+![Simulator Screenshot - iPhone 16 Pro - 2024-11-08 at 14 42 00](https://github.com/user-attachments/assets/bc0e6ed4-c6b1-4e09-a0ab-0ac546eb6390)<br />
+![Simulator Screenshot - iPhone 16 Pro - 2024-11-08 at 14 08 45](https://github.com/user-attachments/assets/e4ef195c-ea15-4077-8db2-b50d5cb7e2dd)<br />
+![Simulator Screenshot - iPhone 16 Pro - 2024-11-08 at 14 08 40](https://github.com/user-attachments/assets/2f40cd9a-5f76-4891-bbc5-c75337b555d4)<br />
+![Simulator Screenshot - iPhone 16 Pro - 2024-11-08 at 14 09 59](https://github.com/user-attachments/assets/6dafea1c-7478-4569-89a2-63fbb3a78bfd)<br />
+
+
+
+
+
