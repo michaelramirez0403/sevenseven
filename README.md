@@ -32,7 +32,7 @@ Design pattern used:<br />
 • Object Oriented Programming<br />
 • Solid priciples applied<br />
 
-Requirements to acheived:
+Requirements to acheived:<br />
 • Project is written in Swift.<br />
 • Core Data is added for data persistence.<br />
 • Unit tests written.<br />
