@@ -2,7 +2,16 @@
 ## SwiftPass
 This is a take home project for SevenSeven.<br />
 
-## Instruction
+## SwiftPass App Instruction to use:
+• Download the code from this repository. <br />
+• Double click the zip file and access the SwiftPass folder. <br />
+• Double click the SwiftPass.xcworkspace to open the app. <br />
+• Click select the simulator type and the play button in xcode to install the app. <br />
+• Test user: <br />
+   • Username: johndoe@example.com <br />
+   • Password: Greatpass123 <br />
+
+## Introduction
 Core functionality:<br />
 • User opens the app and is presented with a login page.<br />
 
@@ -50,15 +59,3 @@ Screens for UI Design<br />
 ![Simulator Screenshot - iPhone 16 Pro - 2024-11-08 at 14 08 45](https://github.com/user-attachments/assets/ce6ff604-834c-4198-900b-a0298df8185d)
 ![Simulator Screenshot - iPhone 16 Pro - 2024-11-08 at 14 08 40](https://github.com/user-attachments/assets/74461aec-8f53-4c0e-8577-df7f324d2e8b)
 ![Simulator Screenshot - iPhone 16 Pro - 2024-11-08 at 14 09 59](https://github.com/user-attachments/assets/eeadb8c0-b07b-4798-8a9b-b47b60f36f50)
-
-## SwiftPass App Instruction to use:
-• Download the code from this repository. <br />
-• Double click the zip file and access the SwiftPass folder. <br />
-• Double click the SwiftPass.xcworkspace to open the app. <br />
-• Click select the simulator type and the play button in xcode to install the app. <br />
-• Test user: <br />
-   • Username: johndoe@example.com <br />
-   • Password: Greatpass123 <br />
-
-
-
