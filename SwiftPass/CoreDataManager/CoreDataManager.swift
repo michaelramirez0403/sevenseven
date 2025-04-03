@@ -9,15 +9,15 @@ import Foundation
 import CoreData
 class CoreDataManager {
     static let sharedManager = CoreDataManager()
-//    private init() {}
+    //    private init() {}
     lazy var persistentContainer: NSPersistentContainer = {
-      let container = NSPersistentContainer(name: "SwiftPass")
-      container.loadPersistentStores(completionHandler: { (_, error) in
-        if let error = error as NSError? {
-          fatalError("Unresolved error \(error), \(error.userInfo)")
-        }
-      })
-      return container
+        let container = NSPersistentContainer(name: "SwiftPass")
+        container.loadPersistentStores(completionHandler: { (_, error) in
+            if let error = error as NSError? {
+                fatalError("Unresolved error \(error), \(error.userInfo)")
+            }
+        })
+        return container
     }()
     // MARK: - Set up a Core Data in-memory store to avoid persistent changes during testing.
     init(inMemory: Bool = false) {
@@ -32,15 +32,15 @@ class CoreDataManager {
         }
     }
     func saveContext () {
-      let context = CoreDataManager.sharedManager.persistentContainer.viewContext
-      if context.hasChanges {
-        do {
-          try context.save()
-        } catch {
-          let nserror = error as NSError
-          fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+        let context = CoreDataManager.sharedManager.persistentContainer.viewContext
+        if context.hasChanges {
+            do {
+                try context.save()
+            } catch {
+                let nserror = error as NSError
+                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+            }
         }
-      }
     }
     func insertUserDetails(_ user: UsersDetails) {
         let managedContext = CoreDataManager.sharedManager.persistentContainer.viewContext
@@ -63,7 +63,7 @@ class CoreDataManager {
         fetchRequest.predicate = NSPredicate(format: "email == %@", identifier)
         do {
             let items = try managedContext.fetch(fetchRequest)
-            return items.first 
+            return items.first
         } catch let error as NSError {
             print("Could not fetch. \(error), \(error.userInfo)")
             return nil
@@ -73,15 +73,16 @@ class CoreDataManager {
         let managedContext = CoreDataManager.sharedManager.persistentContainer.viewContext
         let fetchRequest : NSFetchRequest<Users> = Users.fetchRequest()
         fetchRequest.fetchLimit =  1
-        fetchRequest.predicate = NSPredicate(format: "email == %@" ,email)
-        fetchRequest.predicate = NSPredicate(format: "password == %@", password)
+        let emailPredicate = NSPredicate(format: "email == %@", email)
+        let passwordPredicate = NSPredicate(format: "password == %@", password)
+        // Uses NSCompoundPredicate(.and, [emailPredicate, passwordPredicate])
+        // This will ensure that both email and password match
+        fetchRequest.predicate = NSCompoundPredicate(type: .and,
+                                                     subpredicates: [emailPredicate,
+                                                                     passwordPredicate])
         do {
             let count = try managedContext.count(for: fetchRequest)
-            if count >= 1 {
-                return true
-            } else {
-                return false
-            }
+            return count >= 1
         } catch let error as NSError {
             print("Could not fetch. \(error), \(error.userInfo)")
             return false

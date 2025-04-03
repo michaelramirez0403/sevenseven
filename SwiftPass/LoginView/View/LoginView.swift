@@ -124,6 +124,7 @@ class LoginView: BaseViewController {
     }
     func customViews() {
         viewModel.delegate = self
+        viewModel.testUserLogin()
         createNavigationBackButton()
         logoImageView.image = Images.burgerImage
         fancyIconView.image = Images.fancyImage
@@ -132,6 +133,7 @@ class LoginView: BaseViewController {
         emailTextField.tag = 1
         passwordTextField.placeholder = TitleLabel.password
         passwordTextField.tag = 2
+        passwordTextField.isSecureTextEntry = true
         connectLabel.text = TitleLabel.connectWith
         gIconButton.addTarget(self,
                               action: #selector(notAvailableButtonTapped),

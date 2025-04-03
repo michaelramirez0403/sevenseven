@@ -15,16 +15,26 @@ class LoginViewModel: BaseViewModel {
     func login() {
         let existingUser = CoreDataManager.sharedManager.checkIfItemExist(usernameText,
                                                                           passwordText)
-        if !existingUser {
+        guard existingUser else {
             delegate?.didRequestFailed("Login Failed: Your user ID or password is incorrect.")
             return
         }
         delegate?.loading()
         let simulatedNetworkLatency = Double.random(in: 1...3)
-        DispatchQueue.global().asyncAfter(deadline: .now() + simulatedNetworkLatency) {
+        DispatchQueue.global().asyncAfter(deadline: .now() + simulatedNetworkLatency) { [weak self] in
             DispatchQueue.main.async {
-                self.delegate?.didRequestSuccess("Push to another controller.")
+                self?.delegate?.didRequestSuccess("Push to another controller.")
             }
+        }
+    }
+    func testUserLogin() {
+        let user = UsersDetails(email: "johndoe@example.com",
+                                password: "Greatpass123")
+        DispatchQueue.global(qos: .background).async {
+            let existingUser = CoreDataManager.sharedManager.checkIfItemExist(user.email!,
+                                                                              user.password!)
+            guard !existingUser else { return } // Exit if the user already exists
+            CoreDataManager.sharedManager.insertUserDetails(user)
         }
     }
 }

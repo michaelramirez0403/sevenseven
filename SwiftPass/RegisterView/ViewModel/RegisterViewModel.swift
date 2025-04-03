@@ -21,14 +21,36 @@ class RegisterViewModel: BaseViewModel {
             return
         }
         delegate?.loading()
-        let user = UsersDetails(email: usernameText,
-                                password: passwordText)
-        // Simulate the network call
-        let simulatedNetworkLatency = Double.random(in: 1...3)
-        DispatchQueue.global().asyncAfter(deadline: .now() + simulatedNetworkLatency) {
-            DispatchQueue.main.async {
+//        let user = UsersDetails(email: usernameText,
+//                                password: passwordText)
+//        // Simulate the network call
+//        let simulatedNetworkLatency = Double.random(in: 1...3)
+//        DispatchQueue.global().asyncAfter(deadline: .now() + simulatedNetworkLatency) { [weak self] in
+//            DispatchQueue.main.async {
+//                CoreDataManager.sharedManager.insertUserDetails(user)
+//                self?.delegate?.didRequestSuccess("You can now login.")
+//            }
+//        }
+        DispatchQueue.global(qos: .background).async {
+            let existingUser = CoreDataManager.sharedManager.checkIfItemExist(self.usernameText, self.passwordText)
+
+            guard !existingUser else {
+                DispatchQueue.main.async {
+                    self.delegate?.didRequestFailed("Email address is already registered.")
+                }
+                return
+            }
+
+            let user = UsersDetails(email: self.usernameText,
+                                    password: self.passwordText)
+            let simulatedNetworkLatency = Double.random(in: 1...3)
+
+            DispatchQueue.global().asyncAfter(deadline: .now() + simulatedNetworkLatency) {
                 CoreDataManager.sharedManager.insertUserDetails(user)
-                self.delegate?.didRequestSuccess("You can now login.")
+
+                DispatchQueue.main.async { [weak self] in
+                    self?.delegate?.didRequestSuccess("You can now login.")
+                }
             }
         }
     }

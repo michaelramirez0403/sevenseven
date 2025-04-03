@@ -111,6 +111,7 @@ class RegisterView: BaseViewController {
         emailTextField.tag = 1
         passwordTextField.placeholder = TitleLabel.passwordPlaceholder
         passwordTextField.tag = 2
+        passwordTextField.isSecureTextEntry = true
         connectLabel.text = TitleLabel.connectWith
         gIconButton.addTarget(self,
                                action: #selector(notAvailableButtonTapped),
