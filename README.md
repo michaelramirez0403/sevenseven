@@ -56,5 +56,9 @@ Screens for UI Design<br />
 • Double click the zip file and access the SwiftPass folder. <br />
 • Double click the SwiftPass.xcworkspace to open the app. <br />
 • Click select the simulator type and the play button in xcode to install the app. <br />
+• Test user: <br />
+   • Username: johndoe@example.com <br />
+   • Password: Greatpass123 <br />
+
 
 
